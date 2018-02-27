@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker { image '' }
+        docker { image 'ruby:2.2' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
+                sh 'ruby version'
             }
         }
     }
